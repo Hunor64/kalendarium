@@ -1,5 +1,4 @@
 date = new Date();
-let meglepetes = ['😊', '😂', '🤣', '😍', '😒', '😭', '😅', '🙌', '👍', '😁', '🤔', '😎', '😜', '😡', '🤑', '😴', '👏', '🥳', '😇', '🤯', '👀', '🚀', '🎉', '🔥'];
 let altMeglepetes = ['🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕','🖕'];
 
 function createKalendarium(inputNum) {
@@ -37,12 +36,10 @@ function openKalendarium(inputDay) {
     if (pElement.innerHTML == inputDay) {
         
         if (inputDay > date.getDate()) {
-            alert("Még nem nyithatod ezt ki!")
-            //alert("AMBATOBLOU")
+            alert("AMBATOBLOU")
         } 
         else {
-            pElement.innerHTML = meglepetes[inputDay-1];
-            //pElement.innerHTML = altMeglepetes[inputDay-1];
+            pElement.innerHTML = altMeglepetes[inputDay-1];
             divElement.id = "redNap";
         }
     }
