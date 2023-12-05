@@ -42,6 +42,7 @@ function openKalendarium(inputDay) {
         } 
         else {
             pElement.innerHTML = meglepetes[inputDay-1];
+            //pElement.innerHTML = altMeglepetes[inputDay-1];
             divElement.id = "redNap";
         }
     }
